@@ -1,10 +1,16 @@
 # devops
 Step1 : create a unbutu linux
+
 step2 : login to : ssh durga@20.219.56.0 <paas:devops@123456789>
+
 step3 : apt install virtualbox
+
 step4 : apt install vagrant
+
 step5 : vagrant init
+
 step6 : vagrant up
+
 step7 : sudo apt update
 $ sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 Once all the packages have been installed, add the Docker GPG key
