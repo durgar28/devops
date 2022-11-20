@@ -8,7 +8,7 @@ VM_NAME = 'new-vm'
 # VM User — 'vagrant' by default
 VM_USER = 'vagrant'
 # Username on your Mac
-MAC_USER = 'John'
+MAC_USER = 'durga'
 # Host folder to sync
 HOST_PATH = '/Users/' + MAC_USER + '/' + VM_NAME
 # Where to sync to on Guest — 'vagrant' is the default user name
@@ -45,5 +45,11 @@ Vagrant.configure(2) do |config|
     apt-get update
     apt-get upgrade -y
     apt-get autoremove -y
+    apt install apt-transport-https ca-certificates curl software-properties-common -y
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/docker.gpg
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt update
+    apt install docker-ce -y
+    systemctl enable docker
   SHELL
 end
