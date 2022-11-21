@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "welcome"
-mkdir /home/durga
+sudo mkdir /home/durga
