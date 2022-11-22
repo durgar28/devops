@@ -1,6 +1,7 @@
 
 # devops
 
+
 Step1 : create a unbutu linux
 
 step2 : login to : ssh durga@20.219.56.0 <paas:devops@123456789>
