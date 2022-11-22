@@ -6,13 +6,13 @@ VAGRANT_BOX = 'ubuntu/trusty64'
 # Memorable name for your
 VM_NAME = 'new-vm'
 # VM User — 'vagrant' by default
-VM_USER = 'dikshith726'
+VM_USER = 'durga'
 # Username on your Mac
-MAC_USER = 'dikshith726'
+MAC_USER = 'durga'
 # Host folder to sync
 HOST_PATH = '/Users/' + MAC_USER + '/' + VM_NAME
 # Where to sync to on Guest — 'vagrant' is the default user name
-GUEST_PATH = '/home/dikshith726' + VM_USER + '/' + VM_NAME
+GUEST_PATH = '/home/durga' + VM_USER + '/' + VM_NAME
 # # VM Port — uncomment this to use NAT instead of DHCP
 # VM_PORT = 8080
 Vagrant.configure(2) do |config|
