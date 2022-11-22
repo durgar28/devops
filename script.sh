@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "welcome"
-sudo apt update
+sudo mkdir /home/test
